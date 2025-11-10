@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  height: 100vh;
+  align-items: center;
+}
+
+.box {
+  border: 2px solid red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #c2eb47;
+}
+
+/*---- clip-path:polygon */
+
+.box-1 {
+  clip-path: polygon(
+    25% 25%,
+    38.41% 18.81%,
+    50% 7.75%,
+    61.59% 18.81%,
+    75% 25%,
+    75% 75%,
+    25% 75%,
+    25% 50%
+  );
+  background-color: #000000;
+}
+
+.box-2 {
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  background-color: #eb4747;
+}
+
+.box-3 {
+  clip-path: polygon(
+    50% 1.25%,
+    9.9% 20.56%,
+    0% 63.95%,
+    27.75% 98.75%,
+    72.25% 98.75%,
+    100% 63.95%,
+    90.1% 20.56%
+  );
+  background-color: #47ebbf;
+}
+
+.box-4 {
+  /* clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 80%, 95% 85%, 85% 85%, 85% 100%, 70% 85%, 5% 85%, 0% 80%, 0% 5%); */
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  ); /*bennet feely*/
+  background-color: #c2eb47;
+}
+
+/* clip-path:circle() */
+
+.circle {
+  clip-path: circle(50px at right top);   /*that means circle in right side and top*/
+  background-color: #47ebbf;
+  
+}
+
+.ellipse{
+    clip-path: ellipse(50px 50px at 0 50%);  /*clip-path: ellipse("width(x-direction)" "height(y-direction)" at "position in x-dire" "position in y-dire");*/
+    background-color: #eb4747;
+}
+
+.inset{
+    clip-path: inset(20px 30px 40px 10px round 10px); /*here inset(top,right,bottom,left round 10px rounded)*/
+}
+
+.inset2{
+    clip-path: inset(20px 30px round 28px 0); /*here inset(toprigth bottomleft round 28px 0(other two regular edges))*/
+}
+
+
+
