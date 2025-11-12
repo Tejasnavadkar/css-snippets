@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +9,7 @@
   gap: 50px;
   height: 100vh;
   align-items: center;
+  background-color: rgb(55, 53, 53);
 }
 
 .box {
@@ -15,7 +20,7 @@
   align-items: center;
   width: 200px;
   height: 200px;
-  background-color: #c2eb47;
+  background-color: #47eb94;
 }
 
 /*---- clip-path:polygon */
@@ -66,7 +71,7 @@
   background-color: #c2eb47;
 }
 
-/* clip-path:circle() */
+/* clip-path:circle() to make circle */
 
 .circle {
   clip-path: circle(50px at right top);   /*that means circle in right side and top*/
@@ -74,11 +79,14 @@
   
 }
 
+/* clip-path:ellipse() to make a ovual shape */
+
 .ellipse{
     clip-path: ellipse(50px 50px at 0 50%);  /*clip-path: ellipse("width(x-direction)" "height(y-direction)" at "position in x-dire" "position in y-dire");*/
     background-color: #eb4747;
 }
 
+/* clip-path:inset() make rectangle or box shape */
 .inset{
     clip-path: inset(20px 30px 40px 10px round 10px); /*here inset(top,right,bottom,left round 10px rounded)*/
 }
@@ -86,6 +94,31 @@
 .inset2{
     clip-path: inset(20px 30px round 28px 0); /*here inset(toprigth bottomleft round 28px 0(other two regular edges))*/
 }
+
+/* clip-path:polygon() to make any shape with points */
+.polygon{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); /*top left se start hoga ie- 0% 0%*/
+}
+
+.polygonshape-2{
+    clip-path:polygon(0% 0%, 100% 0%, 80% 50%, 100% 100%, 0% 100%) ; /*here we set 5 points  (top left(x-direction and y-direction), top right(x and y), middle right(x and y), bottom right(x and y), top left(x and y))*/
+}
+
+.polygonshape-3{
+    clip-path: polygon(0% 0%, 70% 0%, 100% 50% , 70% 100%, 0% 100%, 20% 50%);
+}
+
+/* .path{
+    clip-path: path("M 20 51 L 40 51 L 70 51 L 70 30 L 140 30 L 140 180 L 10 180 L 10 51 Z");
+} */
+
+.path{
+clip-path:path("M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 140,0 A 10,10,0,0,1 150,10 L 150,190 A 10,10,0,0,1 140,200 L 10, 200 A 10,10,0,0,1 0,190 L 0,50 A 10,10,0,0,1 10,40 Z")
+} 
+/* 
+here M means start and z means end
+here A 10,10 0,0,0 means concave curv and A 10,10 0,0,1 for convax curv that means rounded border 
+  */
 
 
 
