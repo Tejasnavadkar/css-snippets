@@ -133,3 +133,7 @@ here A 10,10 0,0,0 means concave curv and A 10,10 0,0,1 for convax curv that mea
 yt-tutorial - https://www.youtube.com/playlist?list=PLrEX5wDo7gnHccTJxhoVBIzC18kdRzOO5
 clip-path generator tool :- https://unused-css.com/tools/clip-path-generator
 tool-2 :- https://bennettfeely.com/clippy/
+
+
+ui-
+![alt text](image.png)
