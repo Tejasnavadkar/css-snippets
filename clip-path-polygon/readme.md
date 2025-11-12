@@ -10,7 +10,7 @@ and many more
 
 1 - polygon()
 
-![alt text](/assets/image-7.png)
+![alt text](./assets/image-7.png)
 
 syntax:-
 
