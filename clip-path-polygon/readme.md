@@ -16,7 +16,7 @@ syntax:-
 
 clip-path: polygon(x1 y1, x2 y2, x3 y3, ...)
 
-![alt text](/assets/image-8.png)
+![alt text](./assets/image-8.png)
 
 -webkit-clip-path: polygon(x1 y1, x2 y2, x3 y3, ...) kya hota hai?
 
@@ -33,11 +33,11 @@ top left se start hoga
 
 here we set 5 points 
 
-![alt text](/assets/image-9.png)
+![alt text](./assets/image-9.png)
 
 2- clip-path:polygon(0% 0%, 70% 0%, 100% 50% , 70% 100%, 0% 100%, 20% 50%)
 
-![alt text](/assets/image-10.png)
+![alt text](./assets/image-10.png)
 
 3-clip-path:polygon(20px 50%, 0% 0%, 100% 0%, 100% 100%, 0% 100%)
 
@@ -50,7 +50,7 @@ here we set 5 points
     0% 100%
   ); -->
 
-![alt text](/assets/image-17.png)
+![alt text](./assets/image-17.png)
 
 Ye bol raha hai:
 
@@ -73,7 +73,7 @@ Because stepper ka design continuous ribbon jaisa hai jisme har step ek chevron 
 
 2 - clip-path:circle(50px at right top) circle appear at right side top side
 
-![alt text](/assets/image-16.png)
+![alt text](./assets/image-16.png)
 
 
 3- clip-path:ellipse()
@@ -81,32 +81,32 @@ Because stepper ka design continuous ribbon jaisa hai jisme har step ek chevron 
 ellipse is very similar to circle but more flexiable, it let you crop elements in ovul shape
 
 
-![alt text](/assets/image-1.png)
+![alt text](./assets/image-1.png)
 
-![alt text](/assets/image-2.png)
+![alt text](./assets/image-2.png)
 
 
 4 - inset shape (clip-path:inset())
 lets you crop the rectangular area from an element
-![alt text](/assets/image-3.png)
+![alt text](./assets/image-3.png)
 
 syntax :-
 
-![alt text](/assets/image-4.png)
+![alt text](./assets/image-4.png)
 
 eg-1:- clip-path: inset(20px 30px 40px 10px round 10px); /*here inset(top,right,bottom,left round 10px rounded)*/
-![alt text](/assets/image-6.png)
+![alt text](./assets/image-6.png)
 
 eg-2:-clip-path: inset(20px 30px round 28px 0); /*here inset(toprigth bottomleft round 28px 0(other two regular edges))*/
-![alt text](/assets/image-5.png)
+![alt text](./assets/image-5.png)
 
 
 5- path (clip-path:path())
 
-![alt text](/assets/image-11.png)
+![alt text](./assets/image-11.png)
 
 A for curv
-![alt text](/assets/image-12.png)
+![alt text](./assets/image-12.png)
 
 eg-.path{
 clip-path:path("M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 140,0 A 10,10,0,0,1 150,10 L 150,190 A 10,10,0,0,1 140,200 L 10, 200 A 10,10,0,0,1 0,190 L 0,50 A 10,10,0,0,1 10,40 Z")
@@ -117,16 +117,16 @@ here A 10,10 0,0,0 means concave curv and A 10,10 0,0,1 for convax curv that mea
   */
 
 1 = convex
-![alt text](/assets/image-14.png)
+![alt text](./assets/image-14.png)
 
 0 = concave
 
-![alt text](/assets/image-15.png)
+![alt text](./assets/image-15.png)
 
 
  result :-
  
- ![alt text](/assets/image-13.png)
+ ![alt text](./assets/image-13.png)
 
 
 
